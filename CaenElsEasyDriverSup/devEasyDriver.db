@@ -228,3 +228,22 @@ record(ao, "$(P)$(R)ControllerKd")
     field(PREC, "5")
 }
 
+# =================================================
+# Slew rate
+# =================================================
+record(ao, "$(P)$(R)SlewRate")
+{
+    field(DESC, "Slew rate")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT) 52 0)")
+    field(PREC, "3")
+}
+
+record(ai, "$(P)$(R)SlewRateRBV")
+{
+    field(DESC, "Slew rate readback")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT) 51 0)")
+    field(SCAN, "I/O Intr")
+    field(PREC, "3")
+}

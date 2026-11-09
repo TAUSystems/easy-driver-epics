@@ -66,6 +66,8 @@
 #define A_READ_SHUNT_TEMPERATURE    42
 #define A_READ_OUTPUT_VOLTAGE       43
 #define A_READ_GROUND_CURRENT       44
+#define A_READ_SLEW_RATE            51
+#define A_WRITE_SLEW_RATE           52
 
 /*
  * asynInt32 subaddresses
@@ -517,11 +519,18 @@ float64Write(void *pvt, asynUser *pasynUser, epicsFloat64 value)
             return status;
         break;
 
+    case A_WRITE_SLEW_RATE:
+        status = xferf(pasynUser, ppvt, "MWSR:%.4e\r", value);
+        if (status != asynSuccess)
+            return status;
+        break;
+
     case A_SETPOINT_CURRENT:
         ppvt->setpointUpdateCount++;
         status = cmd(pasynUser, ppvt, (1 << EASY_DRIVER_WR_STAT_ONOFF) |
                                       ppvt->slewMode, value);				// Use the ramp flag in the SlewMode variable
         return status;
+
 
     default:
         epicsSnprintf(pasynUser->errorMessage, pasynUser->errorMessageSize,
@@ -558,6 +567,9 @@ float64Read(void *pvt, asynUser *pasynUser, epicsFloat64 *value)
 
     case A_READ_OUTPUT_VOLTAGE:
         return read64f(pasynUser, ppvt, value, "MRV\r");
+    
+    case A_READ_SLEW_RATE:
+        return read64f(pasynUser, ppvt, value, "MRSR\r");
 
     case A_SETPOINT_CURRENT:
         status = cmd(pasynUser, ppvt, 1 << EASY_DRIVER_WR_STAT_IGNORE, 0);
