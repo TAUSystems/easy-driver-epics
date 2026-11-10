@@ -6,7 +6,7 @@ release 1
 x 587
 y 82
 w 450
-h 700
+h 750
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-bold-r-14.0"
@@ -28,7 +28,7 @@ major 4
 minor 0
 release 0
 x 4
-y 305
+y 355
 w 441
 h 120
 lineColor index 14
@@ -71,7 +71,7 @@ major 4
 minor 0
 release 0
 x 342
-y 332
+y 382
 w 176
 h 16
 
@@ -84,7 +84,7 @@ major 4
 minor 1
 release 0
 x 342
-y 332
+y 382
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -104,7 +104,7 @@ major 4
 minor 0
 release 0
 x 502
-y 332
+y 382
 w 16
 h 16
 lineColor index 14
@@ -119,7 +119,7 @@ major 4
 minor 0
 release 0
 x 503
-y 333
+y 383
 w 14
 h 14
 lineColor index 20
@@ -144,7 +144,7 @@ release 0
 x 330
 y 186
 w 103
-h 54
+h 101
 
 beginGroup
 
@@ -228,6 +228,57 @@ offLabel "Unlimited"
 3d
 useEnumNumeric
 font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 246
+w 80
+h 20
+controlPv "$(P)$(R)SlewRate"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 31
+editable
+autoHeight
+limitsFromDb
+nullColor index 7
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 270
+w 80
+h 17
+controlPv "$(P)$(R)SlewRateRBV"
+font "helvetica-medium-r-14.0"
+fgColor index 14
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
 endObjectProperties
 
 # (Static Text)
@@ -499,7 +550,7 @@ major 4
 minor 0
 release 0
 x 4
-y 436
+y 486
 w 441
 h 252
 
@@ -512,7 +563,7 @@ major 4
 minor 0
 release 0
 x 4
-y 445
+y 495
 w 441
 h 243
 lineColor index 14
@@ -526,7 +577,7 @@ major 4
 minor 0
 release 0
 x 8
-y 499
+y 549
 w 176
 h 16
 
@@ -539,7 +590,7 @@ major 4
 minor 1
 release 0
 x 8
-y 499
+y 549
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -559,7 +610,7 @@ major 4
 minor 0
 release 0
 x 168
-y 499
+y 549
 w 16
 h 16
 lineColor index 14
@@ -574,7 +625,7 @@ major 4
 minor 0
 release 0
 x 169
-y 500
+y 550
 w 14
 h 14
 lineColor index 20
@@ -597,7 +648,7 @@ major 4
 minor 0
 release 0
 x 8
-y 519
+y 569
 w 176
 h 16
 
@@ -610,7 +661,7 @@ major 4
 minor 1
 release 0
 x 8
-y 519
+y 569
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -630,7 +681,7 @@ major 4
 minor 0
 release 0
 x 168
-y 519
+y 569
 w 16
 h 16
 lineColor index 14
@@ -645,7 +696,7 @@ major 4
 minor 0
 release 0
 x 169
-y 520
+y 570
 w 14
 h 14
 lineColor index 20
@@ -668,7 +719,7 @@ major 4
 minor 0
 release 0
 x 8
-y 559
+y 609
 w 176
 h 16
 
@@ -681,7 +732,7 @@ major 4
 minor 1
 release 0
 x 8
-y 559
+y 609
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -701,7 +752,7 @@ major 4
 minor 0
 release 0
 x 168
-y 559
+y 609
 w 16
 h 16
 lineColor index 14
@@ -716,7 +767,7 @@ major 4
 minor 0
 release 0
 x 169
-y 560
+y 610
 w 14
 h 14
 lineColor index 20
@@ -739,7 +790,7 @@ major 4
 minor 0
 release 0
 x 8
-y 459
+y 509
 w 176
 h 16
 
@@ -752,7 +803,7 @@ major 4
 minor 1
 release 0
 x 8
-y 459
+y 509
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -772,7 +823,7 @@ major 4
 minor 0
 release 0
 x 168
-y 459
+y 509
 w 16
 h 16
 lineColor index 14
@@ -787,7 +838,7 @@ major 4
 minor 0
 release 0
 x 169
-y 460
+y 510
 w 14
 h 14
 lineColor index 20
@@ -810,7 +861,7 @@ major 4
 minor 0
 release 0
 x 8
-y 479
+y 529
 w 176
 h 16
 
@@ -823,7 +874,7 @@ major 4
 minor 1
 release 0
 x 8
-y 479
+y 529
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -843,7 +894,7 @@ major 4
 minor 0
 release 0
 x 168
-y 479
+y 529
 w 16
 h 16
 lineColor index 14
@@ -858,7 +909,7 @@ major 4
 minor 0
 release 0
 x 169
-y 480
+y 530
 w 14
 h 14
 lineColor index 20
@@ -881,7 +932,7 @@ major 4
 minor 0
 release 0
 x 8
-y 539
+y 589
 w 176
 h 16
 
@@ -894,7 +945,7 @@ major 4
 minor 1
 release 0
 x 8
-y 539
+y 589
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -914,7 +965,7 @@ major 4
 minor 0
 release 0
 x 168
-y 539
+y 589
 w 16
 h 16
 lineColor index 14
@@ -929,7 +980,7 @@ major 4
 minor 0
 release 0
 x 169
-y 540
+y 590
 w 14
 h 14
 lineColor index 20
@@ -952,7 +1003,7 @@ major 4
 minor 0
 release 0
 x 358
-y 656
+y 706
 w 60
 h 22
 fgColor index 14
@@ -976,7 +1027,7 @@ major 4
 minor 1
 release 0
 x 202
-y 436
+y 486
 w 45
 h 17
 font "helvetica-medium-r-14.0"
@@ -995,7 +1046,7 @@ major 4
 minor 0
 release 0
 x 8
-y 619
+y 669
 w 176
 h 16
 
@@ -1008,7 +1059,7 @@ major 4
 minor 1
 release 0
 x 8
-y 619
+y 669
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1028,7 +1079,7 @@ major 4
 minor 0
 release 0
 x 168
-y 619
+y 669
 w 16
 h 16
 lineColor index 14
@@ -1043,7 +1094,7 @@ major 4
 minor 0
 release 0
 x 169
-y 620
+y 670
 w 14
 h 14
 lineColor index 20
@@ -1066,7 +1117,7 @@ major 4
 minor 0
 release 0
 x 8
-y 639
+y 689
 w 176
 h 16
 
@@ -1079,7 +1130,7 @@ major 4
 minor 1
 release 0
 x 8
-y 639
+y 689
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1099,7 +1150,7 @@ major 4
 minor 0
 release 0
 x 168
-y 639
+y 689
 w 16
 h 16
 lineColor index 14
@@ -1114,7 +1165,7 @@ major 4
 minor 0
 release 0
 x 169
-y 640
+y 690
 w 14
 h 14
 lineColor index 20
@@ -1137,7 +1188,7 @@ major 4
 minor 0
 release 0
 x 244
-y 459
+y 509
 w 176
 h 16
 
@@ -1150,7 +1201,7 @@ major 4
 minor 1
 release 0
 x 244
-y 459
+y 509
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1170,7 +1221,7 @@ major 4
 minor 0
 release 0
 x 404
-y 459
+y 509
 w 16
 h 16
 lineColor index 14
@@ -1185,7 +1236,7 @@ major 4
 minor 0
 release 0
 x 405
-y 460
+y 510
 w 14
 h 14
 lineColor index 20
@@ -1208,7 +1259,7 @@ major 4
 minor 0
 release 0
 x 8
-y 579
+y 629
 w 176
 h 16
 
@@ -1221,7 +1272,7 @@ major 4
 minor 1
 release 0
 x 8
-y 579
+y 629
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1241,7 +1292,7 @@ major 4
 minor 0
 release 0
 x 168
-y 579
+y 629
 w 16
 h 16
 lineColor index 14
@@ -1256,7 +1307,7 @@ major 4
 minor 0
 release 0
 x 169
-y 580
+y 630
 w 14
 h 14
 lineColor index 20
@@ -1279,7 +1330,7 @@ major 4
 minor 0
 release 0
 x 8
-y 599
+y 649
 w 176
 h 16
 
@@ -1292,7 +1343,7 @@ major 4
 minor 1
 release 0
 x 8
-y 599
+y 649
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1312,7 +1363,7 @@ major 4
 minor 0
 release 0
 x 168
-y 599
+y 649
 w 16
 h 16
 lineColor index 14
@@ -1327,7 +1378,7 @@ major 4
 minor 0
 release 0
 x 169
-y 600
+y 650
 w 14
 h 14
 lineColor index 20
@@ -1350,7 +1401,7 @@ major 4
 minor 0
 release 0
 x 8
-y 659
+y 709
 w 176
 h 16
 
@@ -1363,7 +1414,7 @@ major 4
 minor 1
 release 0
 x 8
-y 659
+y 709
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1383,7 +1434,7 @@ major 4
 minor 0
 release 0
 x 168
-y 659
+y 709
 w 16
 h 16
 lineColor index 14
@@ -1398,7 +1449,7 @@ major 4
 minor 0
 release 0
 x 169
-y 660
+y 710
 w 14
 h 14
 lineColor index 20
@@ -1421,7 +1472,7 @@ major 4
 minor 0
 release 0
 x 244
-y 499
+y 549
 w 176
 h 16
 
@@ -1434,7 +1485,7 @@ major 4
 minor 1
 release 0
 x 244
-y 499
+y 549
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1454,7 +1505,7 @@ major 4
 minor 0
 release 0
 x 404
-y 499
+y 549
 w 16
 h 16
 lineColor index 14
@@ -1469,7 +1520,7 @@ major 4
 minor 0
 release 0
 x 405
-y 500
+y 550
 w 14
 h 14
 lineColor index 20
@@ -1492,7 +1543,7 @@ major 4
 minor 0
 release 0
 x 244
-y 519
+y 569
 w 176
 h 16
 
@@ -1505,7 +1556,7 @@ major 4
 minor 1
 release 0
 x 244
-y 519
+y 569
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1525,7 +1576,7 @@ major 4
 minor 0
 release 0
 x 404
-y 519
+y 569
 w 16
 h 16
 lineColor index 14
@@ -1540,7 +1591,7 @@ major 4
 minor 0
 release 0
 x 405
-y 520
+y 570
 w 14
 h 14
 lineColor index 20
@@ -1563,7 +1614,7 @@ major 4
 minor 0
 release 0
 x 244
-y 559
+y 609
 w 176
 h 16
 
@@ -1576,7 +1627,7 @@ major 4
 minor 1
 release 0
 x 244
-y 559
+y 609
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1596,7 +1647,7 @@ major 4
 minor 0
 release 0
 x 404
-y 559
+y 609
 w 16
 h 16
 lineColor index 14
@@ -1611,7 +1662,7 @@ major 4
 minor 0
 release 0
 x 405
-y 560
+y 610
 w 14
 h 14
 lineColor index 20
@@ -1634,7 +1685,7 @@ major 4
 minor 0
 release 0
 x 244
-y 479
+y 529
 w 176
 h 16
 
@@ -1647,7 +1698,7 @@ major 4
 minor 1
 release 0
 x 244
-y 479
+y 529
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1667,7 +1718,7 @@ major 4
 minor 0
 release 0
 x 404
-y 479
+y 529
 w 16
 h 16
 lineColor index 14
@@ -1682,7 +1733,7 @@ major 4
 minor 0
 release 0
 x 405
-y 480
+y 530
 w 14
 h 14
 lineColor index 20
@@ -1705,7 +1756,7 @@ major 4
 minor 0
 release 0
 x 244
-y 579
+y 629
 w 176
 h 16
 
@@ -1718,7 +1769,7 @@ major 4
 minor 1
 release 0
 x 244
-y 579
+y 629
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1738,7 +1789,7 @@ major 4
 minor 0
 release 0
 x 404
-y 579
+y 629
 w 16
 h 16
 lineColor index 14
@@ -1753,7 +1804,7 @@ major 4
 minor 0
 release 0
 x 405
-y 580
+y 630
 w 14
 h 14
 lineColor index 20
@@ -1776,7 +1827,7 @@ major 4
 minor 0
 release 0
 x 244
-y 599
+y 649
 w 176
 h 16
 
@@ -1789,7 +1840,7 @@ major 4
 minor 1
 release 0
 x 244
-y 599
+y 649
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1809,7 +1860,7 @@ major 4
 minor 0
 release 0
 x 404
-y 599
+y 649
 w 16
 h 16
 lineColor index 14
@@ -1824,7 +1875,7 @@ major 4
 minor 0
 release 0
 x 405
-y 600
+y 650
 w 14
 h 14
 lineColor index 20
@@ -1847,7 +1898,7 @@ major 4
 minor 0
 release 0
 x 244
-y 539
+y 589
 w 176
 h 16
 
@@ -1860,7 +1911,7 @@ major 4
 minor 1
 release 0
 x 244
-y 539
+y 589
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1880,7 +1931,7 @@ major 4
 minor 0
 release 0
 x 404
-y 539
+y 589
 w 16
 h 16
 lineColor index 14
@@ -1895,7 +1946,7 @@ major 4
 minor 0
 release 0
 x 405
-y 540
+y 590
 w 14
 h 14
 lineColor index 20
@@ -1918,7 +1969,7 @@ major 4
 minor 0
 release 0
 x 244
-y 619
+y 669
 w 176
 h 16
 
@@ -1931,7 +1982,7 @@ major 4
 minor 1
 release 0
 x 244
-y 619
+y 669
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -1951,7 +2002,7 @@ major 4
 minor 0
 release 0
 x 404
-y 619
+y 669
 w 16
 h 16
 lineColor index 14
@@ -1966,7 +2017,7 @@ major 4
 minor 0
 release 0
 x 405
-y 620
+y 670
 w 14
 h 14
 lineColor index 20
@@ -2037,7 +2088,7 @@ major 4
 minor 2
 release 0
 x 330
-y 265
+y 315
 w 90
 h 22
 fgColor index 14
@@ -2067,7 +2118,7 @@ major 4
 minor 0
 release 0
 x 2
-y 267
+y 317
 w 230
 h 20
 
@@ -2080,7 +2131,7 @@ major 4
 minor 1
 release 0
 x 2
-y 269
+y 319
 w 125
 h 17
 font "helvetica-medium-r-14.0"
@@ -2100,7 +2151,7 @@ major 4
 minor 0
 release 0
 x 132
-y 267
+y 317
 w 100
 h 20
 fgColor index 14
@@ -2123,7 +2174,7 @@ major 4
 minor 0
 release 0
 x 8
-y 319
+y 369
 w 176
 h 16
 
@@ -2136,7 +2187,7 @@ major 4
 minor 1
 release 0
 x 8
-y 319
+y 369
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -2156,7 +2207,7 @@ major 4
 minor 0
 release 0
 x 168
-y 319
+y 369
 w 16
 h 16
 lineColor index 14
@@ -2171,7 +2222,7 @@ major 4
 minor 0
 release 0
 x 169
-y 320
+y 370
 w 14
 h 14
 lineColor index 20
@@ -2194,7 +2245,7 @@ major 4
 minor 0
 release 0
 x 8
-y 339
+y 389
 w 176
 h 16
 
@@ -2207,7 +2258,7 @@ major 4
 minor 1
 release 0
 x 8
-y 339
+y 389
 w 155
 h 17
 font "helvetica-medium-r-14.0"
@@ -2227,7 +2278,7 @@ major 4
 minor 0
 release 0
 x 168
-y 339
+y 389
 w 16
 h 16
 lineColor index 14
@@ -2242,7 +2293,7 @@ major 4
 minor 0
 release 0
 x 169
-y 340
+y 390
 w 14
 h 14
 lineColor index 25
@@ -2265,7 +2316,7 @@ major 4
 minor 0
 release 0
 x 244
-y 319
+y 369
 w 176
 h 16
 
@@ -2278,7 +2329,7 @@ major 4
 minor 1
 release 0
 x 244
-y 319
+y 369
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -2298,7 +2349,7 @@ major 4
 minor 0
 release 0
 x 404
-y 319
+y 369
 w 16
 h 16
 lineColor index 14
@@ -2313,7 +2364,7 @@ major 4
 minor 0
 release 0
 x 405
-y 320
+y 370
 w 14
 h 14
 lineColor index 20
@@ -2336,7 +2387,7 @@ major 4
 minor 0
 release 0
 x 244
-y 339
+y 389
 w 176
 h 16
 
@@ -2349,7 +2400,7 @@ major 4
 minor 1
 release 0
 x 244
-y 339
+y 389
 w 155
 h 16
 font "helvetica-medium-r-14.0"
@@ -2369,7 +2420,7 @@ major 4
 minor 0
 release 0
 x 404
-y 339
+y 389
 w 16
 h 16
 lineColor index 14
@@ -2384,7 +2435,7 @@ major 4
 minor 0
 release 0
 x 405
-y 340
+y 390
 w 14
 h 14
 lineColor index 25
@@ -2407,7 +2458,7 @@ major 4
 minor 1
 release 0
 x 204
-y 296
+y 346
 w 41
 h 17
 font "helvetica-medium-r-14.0"
@@ -2427,7 +2478,7 @@ major 4
 minor 0
 release 0
 x 245
-y 382
+y 432
 w 198
 h 17
 
@@ -2440,7 +2491,7 @@ major 4
 minor 5
 release 0
 x 383
-y 382
+y 432
 w 60
 h 17
 controlPv "$(P)$(R)ShuntTemp"
@@ -2465,7 +2516,7 @@ major 4
 minor 1
 release 0
 x 245
-y 382
+y 432
 w 130
 h 17
 font "helvetica-medium-r-14.0"
@@ -2489,7 +2540,7 @@ major 4
 minor 0
 release 0
 x 245
-y 362
+y 412
 w 198
 h 17
 
@@ -2502,7 +2553,7 @@ major 4
 minor 5
 release 0
 x 383
-y 362
+y 412
 w 60
 h 17
 controlPv "$(P)$(R)RegulatorTemp"
@@ -2527,7 +2578,7 @@ major 4
 minor 1
 release 0
 x 245
-y 362
+y 412
 w 130
 h 17
 font "helvetica-medium-r-14.0"
@@ -2551,7 +2602,7 @@ major 4
 minor 0
 release 0
 x 27
-y 382
+y 432
 w 178
 h 17
 
@@ -2564,7 +2615,7 @@ major 4
 minor 1
 release 0
 x 27
-y 382
+y 432
 w 110
 h 17
 font "helvetica-medium-r-14.0"
@@ -2584,7 +2635,7 @@ major 4
 minor 5
 release 0
 x 145
-y 382
+y 432
 w 60
 h 17
 controlPv "$(P)$(R)OutputVoltage"
@@ -2613,7 +2664,7 @@ major 4
 minor 0
 release 0
 x 27
-y 362
+y 412
 w 178
 h 17
 
@@ -2626,7 +2677,7 @@ major 4
 minor 5
 release 0
 x 145
-y 362
+y 412
 w 60
 h 17
 controlPv "$(P)$(R)BulkVoltage"
@@ -2651,7 +2702,7 @@ major 4
 minor 1
 release 0
 x 27
-y 362
+y 412
 w 110
 h 17
 font "helvetica-medium-r-14.0"
@@ -2675,7 +2726,7 @@ major 4
 minor 0
 release 0
 x 27
-y 402
+y 452
 w 178
 h 17
 
@@ -2688,7 +2739,7 @@ major 4
 minor 1
 release 0
 x 17
-y 402
+y 452
 w 120
 h 17
 font "helvetica-medium-r-14.0"
@@ -2708,7 +2759,7 @@ major 4
 minor 5
 release 0
 x 145
-y 402
+y 452
 w 60
 h 17
 controlPv "$(P)$(R)LeakageCurrent"
