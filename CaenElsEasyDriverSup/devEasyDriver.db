@@ -58,6 +58,16 @@ record(bo, "$(P)$(R)SlewControl")
     field(ONAM, "Rate Limit")
     field(FLNK, "$(P)$(R)SlewControlRBV")
 }
+
+record(ao, "$(P)$(R)SlewRate")
+{
+    field(DESC, "Slew rate")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT) 52 0)")
+    field(PREC, "3")
+    field(FLNK, "$(P)$(R)SlewRateRBV")
+}
+
 record(ao, "$(P)$(R)Setpoint")
 {
     field(DESC, "Current setpoint")
@@ -202,6 +212,15 @@ record(bi, "$(P)$(R)SlewControlRBV")
     field(ONAM, "Rate Limit")
 }
 
+record(ai, "$(P)$(R)SlewRateRBV")
+{
+    field(DESC, "Slew rate readback")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT) 51 0)")
+    field(PREC, "3")
+    field(PINI, "YES")
+}
+
 # =================================================
 # Controller gains
 # =================================================
@@ -226,24 +245,4 @@ record(ao, "$(P)$(R)ControllerKd")
     field(DTYP, "asynFloat64")
     field(OUT,  "@asyn($(PORT) 15 0)")
     field(PREC, "5")
-}
-
-# =================================================
-# Slew rate
-# =================================================
-record(ao, "$(P)$(R)SlewRate")
-{
-    field(DESC, "Slew rate")
-    field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn($(PORT) 52 0)")
-    field(PREC, "3")
-}
-
-record(ai, "$(P)$(R)SlewRateRBV")
-{
-    field(DESC, "Slew rate readback")
-    field(DTYP, "asynFloat64")
-    field(INP,  "@asyn($(PORT) 51 0)")
-    field(SCAN, "I/O Intr")
-    field(PREC, "3")
 }
